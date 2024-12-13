@@ -1,0 +1,962 @@
+============================Threads==================================
+
+# Loop for cores
+Write-Host "Analyzing performance with varying cores..."
+for ($cores = 1; $cores -le 20; $cores++) {
+    Write-Host "Cores = $cores"
+    .\ct_reconstruction.exe $cores 180 180 ..\images\test1.bmp ..\results\test1_sinogram_core_$cores.bmp ..\results\test1_reconstructed_core_$cores.bmp
+}
+
+====================================================================
+
+Cores = 1
+CT Processor time: 0 ms
+Input Image read time: 1.992 ms
+Sinogram creation time: 1121.07 ms
+Save Sinogram time: 4.001 ms
+Ramp Filter time: 124.009 ms
+CT Reconstruction time: 22679.7 ms
+Save reconstruction time: 16.737 ms
+Cores = 2
+CT Processor time: 0 ms
+Input Image read time: 3.116 ms
+Sinogram creation time: 1746.04 ms
+Save Sinogram time: 5.126 ms
+Ramp Filter time: 157.604 ms
+CT Reconstruction time: 18942.8 ms
+Save reconstruction time: 9.875 ms
+Cores = 3
+CT Processor time: 0 ms
+Input Image read time: 2.037 ms
+Sinogram creation time: 462.878 ms
+Save Sinogram time: 2.032 ms
+Ramp Filter time: 49.333 ms
+CT Reconstruction time: 7862.92 ms
+Save reconstruction time: 12.186 ms
+Cores = 4
+CT Processor time: 0 ms
+Input Image read time: 0.953 ms
+Sinogram creation time: 391.245 ms
+Save Sinogram time: 1.999 ms
+Ramp Filter time: 35.136 ms
+CT Reconstruction time: 6566.8 ms
+Save reconstruction time: 9.979 ms
+Cores = 5
+CT Processor time: 0 ms
+Input Image read time: 0.995 ms
+Sinogram creation time: 491.034 ms
+Save Sinogram time: 2 ms
+Ramp Filter time: 43.962 ms
+CT Reconstruction time: 6245.16 ms
+Save reconstruction time: 10.001 ms
+Cores = 6
+CT Processor time: 0 ms
+Input Image read time: 1.002 ms
+Sinogram creation time: 378.52 ms
+Save Sinogram time: 3.292 ms
+Ramp Filter time: 54.391 ms
+CT Reconstruction time: 5152.25 ms
+Save reconstruction time: 14.057 ms
+Cores = 7
+CT Processor time: 0 ms
+Input Image read time: 1.003 ms
+Sinogram creation time: 454.269 ms
+Save Sinogram time: 3.002 ms
+Ramp Filter time: 43.028 ms
+CT Reconstruction time: 5208.73 ms
+Save reconstruction time: 10.008 ms
+Cores = 8
+CT Processor time: 0 ms
+Input Image read time: 1.986 ms
+Sinogram creation time: 324.215 ms
+Save Sinogram time: 4.429 ms
+Ramp Filter time: 49.752 ms
+CT Reconstruction time: 4404.68 ms
+Save reconstruction time: 11.042 ms
+Cores = 9
+CT Processor time: 0 ms
+Input Image read time: 1.999 ms
+Sinogram creation time: 336.884 ms
+Save Sinogram time: 3.01 ms
+Ramp Filter time: 47.421 ms
+CT Reconstruction time: 5285.65 ms
+Save reconstruction time: 15.019 ms
+Cores = 10
+CT Processor time: 0 ms
+Input Image read time: 2.043 ms
+Sinogram creation time: 431.192 ms
+Save Sinogram time: 3.006 ms
+Ramp Filter time: 43.187 ms
+CT Reconstruction time: 4933.44 ms
+Save reconstruction time: 12.01 ms
+Cores = 11
+CT Processor time: 0 ms
+Input Image read time: 1.003 ms
+Sinogram creation time: 407.513 ms
+Save Sinogram time: 3.001 ms
+Ramp Filter time: 44.399 ms
+CT Reconstruction time: 4814.13 ms
+Save reconstruction time: 13.014 ms
+Cores = 12
+CT Processor time: 0 ms
+Input Image read time: 1.001 ms
+Sinogram creation time: 397.294 ms
+Save Sinogram time: 3.455 ms
+Ramp Filter time: 43.405 ms
+CT Reconstruction time: 4636.06 ms
+Save reconstruction time: 12.472 ms
+Cores = 13
+CT Processor time: 0 ms
+Input Image read time: 2.002 ms
+Sinogram creation time: 438.579 ms
+Save Sinogram time: 3.989 ms
+Ramp Filter time: 43.705 ms
+CT Reconstruction time: 4416.43 ms
+Save reconstruction time: 16.528 ms
+Cores = 14
+CT Processor time: 0 ms
+Input Image read time: 2.001 ms
+Sinogram creation time: 509.482 ms
+Save Sinogram time: 4.001 ms
+Ramp Filter time: 47.007 ms
+CT Reconstruction time: 4388.3 ms
+Save reconstruction time: 17.689 ms
+Cores = 15
+CT Processor time: 0 ms
+Input Image read time: 1.002 ms
+Sinogram creation time: 470.58 ms
+Save Sinogram time: 4.005 ms
+Ramp Filter time: 49.534 ms
+CT Reconstruction time: 4547.88 ms
+Save reconstruction time: 18.001 ms
+Cores = 16
+CT Processor time: 0 ms
+Input Image read time: 1.996 ms
+Sinogram creation time: 447.692 ms
+Save Sinogram time: 3.002 ms
+Ramp Filter time: 42.228 ms
+CT Reconstruction time: 4427.03 ms
+Save reconstruction time: 12.999 ms
+Cores = 17
+CT Processor time: 0 ms
+Input Image read time: 1.999 ms
+Sinogram creation time: 466.974 ms
+Save Sinogram time: 6.888 ms
+Ramp Filter time: 49.959 ms
+CT Reconstruction time: 4364.66 ms
+Save reconstruction time: 13.997 ms
+Cores = 18
+CT Processor time: 0 ms
+Input Image read time: 2.292 ms
+Sinogram creation time: 449.804 ms
+Save Sinogram time: 9 ms
+Ramp Filter time: 44.755 ms
+CT Reconstruction time: 4238.12 ms
+Save reconstruction time: 11.799 ms
+Cores = 19
+CT Processor time: 0 ms
+Input Image read time: 2.027 ms
+Sinogram creation time: 340.241 ms
+Save Sinogram time: 3.004 ms
+Ramp Filter time: 34.411 ms
+CT Reconstruction time: 3390.96 ms
+Save reconstruction time: 15.552 ms
+Cores = 20
+CT Processor time: 0 ms
+Input Image read time: 3.018 ms
+Sinogram creation time: 362.75 ms
+Save Sinogram time: 5.996 ms
+Ramp Filter time: 35 ms
+CT Reconstruction time: 3586.76 ms
+Save reconstruction time: 14.633 ms
+
+=========================Transducers=================================
+
+Write-Host "Analyzing performance with varying transducers..."
+for ($transducers = 40; $transducers -le 360; $transducers += 40) {
+    Write-Host "Transducers = $transducers"
+    .\ct_reconstruction.exe 1 $transducers 180 ..\images\test1.bmp ..\results\test1_sinogram_trans_$transducers.bmp ..\results\test1_reconstructed_trans_$transducers.bmp
+}
+
+====================================================================
+THREADS = 1
+Transducers = 40
+CT Processor time: 0 ms
+Input Image read time: 2.008 ms
+Sinogram creation time: 248.276 ms
+Save Sinogram time: 0.992 ms
+Ramp Filter time: 23.034 ms
+CT Reconstruction time: 15699.2 ms
+Save reconstruction time: 18.006 ms
+Transducers = 80
+CT Processor time: 0 ms
+Input Image read time: 2.105 ms
+Sinogram creation time: 397.724 ms
+Save Sinogram time: 2.48 ms
+Ramp Filter time: 41.531 ms
+CT Reconstruction time: 15874.1 ms
+Save reconstruction time: 13.998 ms
+Transducers = 120
+CT Processor time: 0 ms
+Input Image read time: 1.024 ms
+Sinogram creation time: 597.043 ms
+Save Sinogram time: 1.999 ms
+Ramp Filter time: 43.994 ms
+CT Reconstruction time: 15813.6 ms
+Save reconstruction time: 13.003 ms
+Transducers = 160
+CT Processor time: 0 ms
+Input Image read time: 0.982 ms
+Sinogram creation time: 842.112 ms
+Save Sinogram time: 3.016 ms
+Ramp Filter time: 79.943 ms
+CT Reconstruction time: 17156.8 ms
+Save reconstruction time: 11.058 ms
+Transducers = 200
+CT Processor time: 0 ms
+Input Image read time: 1.971 ms
+Sinogram creation time: 1087.65 ms
+Save Sinogram time: 2.033 ms
+Ramp Filter time: 72.016 ms
+CT Reconstruction time: 17219.6 ms
+Save reconstruction time: 15.006 ms
+Transducers = 240
+CT Processor time: 0 ms
+Input Image read time: 0.997 ms
+Sinogram creation time: 1266.32 ms
+Save Sinogram time: 3.004 ms
+Ramp Filter time: 96.879 ms
+CT Reconstruction time: 17967.7 ms
+Save reconstruction time: 20.375 ms
+Transducers = 280
+CT Processor time: 0 ms
+Input Image read time: 0.999 ms
+Sinogram creation time: 1533.63 ms
+Save Sinogram time: 5.003 ms
+Ramp Filter time: 187.102 ms
+CT Reconstruction time: 17728.4 ms
+Save reconstruction time: 18.833 ms
+Transducers = 320
+CT Processor time: 0 ms
+Input Image read time: 0.996 ms
+Sinogram creation time: 1845.07 ms
+Save Sinogram time: 4.009 ms
+Ramp Filter time: 168.061 ms
+CT Reconstruction time: 16198.2 ms
+Save reconstruction time: 12.75 ms
+Transducers = 360
+CT Processor time: 0 ms
+Input Image read time: 1.089 ms
+Sinogram creation time: 1876.39 ms
+Save Sinogram time: 5.05 ms
+Ramp Filter time: 151.664 ms
+CT Reconstruction time: 16266.3 ms
+Save reconstruction time: 14.644 ms
+
+THREADS = 4
+Transducers = 40
+CT Processor time: 0 ms
+Input Image read time: 1.01 ms
+Sinogram creation time: 79.391 ms
+Save Sinogram time: 1.001 ms
+Ramp Filter time: 10.039 ms
+CT Reconstruction time: 4509.6 ms
+Save reconstruction time: 15.027 ms
+Transducers = 80
+CT Processor time: 0 ms
+Input Image read time: 0.98 ms
+Sinogram creation time: 159.279 ms
+Save Sinogram time: 1.066 ms
+Ramp Filter time: 17.996 ms
+CT Reconstruction time: 4734.14 ms
+Save reconstruction time: 14.011 ms
+Transducers = 120
+CT Processor time: 0 ms
+Input Image read time: 1.011 ms
+Sinogram creation time: 255.112 ms
+Save Sinogram time: 1.999 ms
+Ramp Filter time: 23.757 ms
+CT Reconstruction time: 6483.46 ms
+Save reconstruction time: 11.997 ms
+Transducers = 160
+CT Processor time: 0 ms
+Input Image read time: 0.997 ms
+Sinogram creation time: 354.985 ms
+Save Sinogram time: 2.98 ms
+Ramp Filter time: 37.998 ms
+CT Reconstruction time: 6279.82 ms
+Save reconstruction time: 12.97 ms
+Transducers = 200
+CT Processor time: 0 ms
+Input Image read time: 0.998 ms
+Sinogram creation time: 434.151 ms
+Save Sinogram time: 2.99 ms
+Ramp Filter time: 46.713 ms
+CT Reconstruction time: 6296.99 ms
+Save reconstruction time: 12.018 ms
+Transducers = 240
+CT Processor time: 0 ms
+Input Image read time: 1.012 ms
+Sinogram creation time: 530.425 ms
+Save Sinogram time: 3.003 ms
+Ramp Filter time: 43.774 ms
+CT Reconstruction time: 6393.89 ms
+Save reconstruction time: 11.996 ms
+Transducers = 280
+CT Processor time: 0 ms
+Input Image read time: 1.008 ms
+Sinogram creation time: 662.299 ms
+Save Sinogram time: 3.007 ms
+Ramp Filter time: 87.807 ms
+CT Reconstruction time: 6660.65 ms
+Save reconstruction time: 15.01 ms
+Transducers = 320
+CT Processor time: 0 ms
+Input Image read time: 1.988 ms
+Sinogram creation time: 744.677 ms
+Save Sinogram time: 4.006 ms
+Ramp Filter time: 84.811 ms
+CT Reconstruction time: 6671.37 ms
+Save reconstruction time: 13.392 ms
+Transducers = 360
+CT Processor time: 0 ms
+Input Image read time: 0.988 ms
+Sinogram creation time: 879.887 ms
+Save Sinogram time: 3.998 ms
+Ramp Filter time: 93.16 ms
+CT Reconstruction time: 6374.64 ms
+Save reconstruction time: 13.995 ms
+
+THREADS = 8
+Transducers = 40
+CT Processor time: 0 ms
+Input Image read time: 2.228 ms
+Sinogram creation time: 65.939 ms
+Save Sinogram time: 2.091 ms
+Ramp Filter time: 13.499 ms
+CT Reconstruction time: 2781.3 ms
+Save reconstruction time: 13.384 ms
+Transducers = 80
+CT Processor time: 0 ms
+Input Image read time: 1.996 ms
+Sinogram creation time: 123.903 ms
+Save Sinogram time: 2.017 ms
+Ramp Filter time: 13.012 ms
+CT Reconstruction time: 2618.51 ms
+Save reconstruction time: 18.987 ms
+Transducers = 120
+CT Processor time: 0 ms
+Input Image read time: 2.04 ms
+Sinogram creation time: 162.166 ms
+Save Sinogram time: 2.054 ms
+Ramp Filter time: 14.992 ms
+CT Reconstruction time: 4313.55 ms
+Save reconstruction time: 13.015 ms
+Transducers = 160
+CT Processor time: 0 ms
+Input Image read time: 2.293 ms
+Sinogram creation time: 292.728 ms
+Save Sinogram time: 2.097 ms
+Ramp Filter time: 40.275 ms
+CT Reconstruction time: 4809.56 ms
+Save reconstruction time: 12.905 ms
+Transducers = 200
+CT Processor time: 0 ms
+Input Image read time: 2.012 ms
+Sinogram creation time: 381.846 ms
+Save Sinogram time: 4.012 ms
+Ramp Filter time: 34.807 ms
+CT Reconstruction time: 4460.32 ms
+Save reconstruction time: 12.758 ms
+Transducers = 240
+CT Processor time: 0 ms
+Input Image read time: 1.997 ms
+Sinogram creation time: 446.496 ms
+Save Sinogram time: 3.013 ms
+Ramp Filter time: 38.056 ms
+CT Reconstruction time: 4454.49 ms
+Save reconstruction time: 12.041 ms
+Transducers = 280
+CT Processor time: 0 ms
+Input Image read time: 1.001 ms
+Sinogram creation time: 536.21 ms
+Save Sinogram time: 4.008 ms
+Ramp Filter time: 71.919 ms
+CT Reconstruction time: 4317.95 ms
+Save reconstruction time: 12.002 ms
+Transducers = 320
+CT Processor time: 0 ms
+Input Image read time: 1.007 ms
+Sinogram creation time: 681.505 ms
+Save Sinogram time: 4.561 ms
+Ramp Filter time: 88.894 ms
+CT Reconstruction time: 3616.09 ms
+Save reconstruction time: 13.015 ms
+Transducers = 360
+CT Processor time: 0 ms
+Input Image read time: 2.002 ms
+Sinogram creation time: 554.836 ms
+Save Sinogram time: 3.999 ms
+Ramp Filter time: 66.426 ms
+CT Reconstruction time: 3540.41 ms
+Save reconstruction time: 17.623 ms
+
+THREADS = 20
+Transducers = 40
+CT Processor time: 0 ms
+Input Image read time: 1 ms
+Sinogram creation time: 62.923 ms
+Save Sinogram time: 1.008 ms
+Ramp Filter time: 14.563 ms
+CT Reconstruction time: 3075.82 ms
+Save reconstruction time: 14.956 ms
+Transducers = 80
+CT Processor time: 0 ms
+Input Image read time: 2.014 ms
+Sinogram creation time: 169.117 ms
+Save Sinogram time: 2.01 ms
+Ramp Filter time: 41.338 ms
+CT Reconstruction time: 4317.42 ms
+Save reconstruction time: 19.125 ms
+Transducers = 120
+CT Processor time: 0 ms
+Input Image read time: 0.958 ms
+Sinogram creation time: 291.097 ms
+Save Sinogram time: 3.996 ms
+Ramp Filter time: 60.349 ms
+CT Reconstruction time: 4326.04 ms
+Save reconstruction time: 11.958 ms
+Transducers = 160
+CT Processor time: 0 ms
+Input Image read time: 2.009 ms
+Sinogram creation time: 332.631 ms
+Save Sinogram time: 3.007 ms
+Ramp Filter time: 35.013 ms
+CT Reconstruction time: 4227.52 ms
+Save reconstruction time: 18.145 ms
+Transducers = 200
+CT Processor time: 0 ms
+Input Image read time: 2.019 ms
+Sinogram creation time: 548.755 ms
+Save Sinogram time: 5.345 ms
+Ramp Filter time: 104.517 ms
+CT Reconstruction time: 3974.01 ms
+Save reconstruction time: 11.569 ms
+Transducers = 240
+CT Processor time: 0 ms
+Input Image read time: 2.005 ms
+Sinogram creation time: 501.257 ms
+Save Sinogram time: 4.114 ms
+Ramp Filter time: 76.395 ms
+CT Reconstruction time: 4164.59 ms
+Save reconstruction time: 15.997 ms
+Transducers = 280
+CT Processor time: 0 ms
+Input Image read time: 1.994 ms
+Sinogram creation time: 574.838 ms
+Save Sinogram time: 3.999 ms
+Ramp Filter time: 70.442 ms
+CT Reconstruction time: 3678.55 ms
+Save reconstruction time: 14.048 ms
+Transducers = 320
+CT Processor time: 0 ms
+Input Image read time: 1.04 ms
+Sinogram creation time: 726.195 ms
+Save Sinogram time: 5.997 ms
+Ramp Filter time: 79.774 ms
+CT Reconstruction time: 4012.82 ms
+Save reconstruction time: 13.008 ms
+Transducers = 360
+CT Processor time: 0 ms
+Input Image read time: 2.011 ms
+Sinogram creation time: 739.264 ms
+Save Sinogram time: 4.992 ms
+Ramp Filter time: 81.665 ms
+CT Reconstruction time: 4004.63 ms
+Save reconstruction time: 11.336 ms
+
+==============================Num Angles============================
+
+# Loop for angles
+Write-Host "Analyzing performance with varying angles..."
+for ($angles = 40; $angles -le 360; $angles += 40) {
+    Write-Host "Angles = $angles"
+    .\ct_reconstruction.exe 4 180 $angles ..\images\test1.bmp ..\results\test1_sinogram_angle_$angles.bmp ..\results\test1_reconstructed_angle_$angles.bmp
+}
+
+====================================================================
+THREADS=1
+Angles = 40
+CT Processor time: 0 ms
+Input Image read time: 1.003 ms
+Sinogram creation time: 213.438 ms
+Save Sinogram time: 2.018 ms
+Ramp Filter time: 18.267 ms
+CT Reconstruction time: 3563.61 ms
+Save reconstruction time: 19.075 ms
+Angles = 80
+CT Processor time: 0 ms
+Input Image read time: 2.007 ms
+Sinogram creation time: 413.363 ms
+Save Sinogram time: 1.991 ms
+Ramp Filter time: 64.892 ms
+CT Reconstruction time: 7153.45 ms
+Save reconstruction time: 15.026 ms
+Angles = 120
+CT Processor time: 0 ms
+Input Image read time: 1.003 ms
+Sinogram creation time: 610.248 ms
+Save Sinogram time: 1.968 ms
+Ramp Filter time: 56.162 ms
+CT Reconstruction time: 10537.1 ms
+Save reconstruction time: 17.714 ms
+Angles = 160
+CT Processor time: 0 ms
+Input Image read time: 1.002 ms
+Sinogram creation time: 811.259 ms
+Save Sinogram time: 5.117 ms
+Ramp Filter time: 74.111 ms
+CT Reconstruction time: 14076.1 ms
+Save reconstruction time: 16.287 ms
+Angles = 200
+CT Processor time: 0 ms
+Input Image read time: 1.059 ms
+Sinogram creation time: 1029.62 ms
+Save Sinogram time: 3.005 ms
+Ramp Filter time: 114.604 ms
+CT Reconstruction time: 17705.9 ms
+Save reconstruction time: 14.998 ms
+Angles = 240
+CT Processor time: 0 ms
+Input Image read time: 2.056 ms
+Sinogram creation time: 1180.06 ms
+Save Sinogram time: 4.299 ms
+Ramp Filter time: 143.772 ms
+CT Reconstruction time: 21138.5 ms
+Save reconstruction time: 16.003 ms
+Angles = 280
+CT Processor time: 0 ms
+Input Image read time: 2.025 ms
+Sinogram creation time: 1452.29 ms
+Save Sinogram time: 5.753 ms
+Ramp Filter time: 129.297 ms
+CT Reconstruction time: 24913.9 ms
+Save reconstruction time: 15.015 ms
+Angles = 320
+CT Processor time: 0 ms
+Input Image read time: 1.004 ms
+Sinogram creation time: 1659.44 ms
+Save Sinogram time: 6.006 ms
+Ramp Filter time: 135.546 ms
+CT Reconstruction time: 28061.1 ms
+Save reconstruction time: 15.57 ms
+Angles = 360
+CT Processor time: 0 ms
+Input Image read time: 1.057 ms
+Sinogram creation time: 1811.76 ms
+Save Sinogram time: 4.984 ms
+Ramp Filter time: 152.507 ms
+CT Reconstruction time: 31764.5 ms
+Save reconstruction time: 17.332 ms
+
+THREADS = 4
+Angles = 40
+CT Processor time: 0 ms
+Input Image read time: 1.932 ms
+Sinogram creation time: 81.162 ms
+Save Sinogram time: 1.016 ms
+Ramp Filter time: 9.008 ms
+CT Reconstruction time: 991.408 ms
+Save reconstruction time: 10.585 ms
+Angles = 80
+CT Processor time: 0 ms
+Input Image read time: 0.996 ms
+Sinogram creation time: 145.529 ms
+Save Sinogram time: 1.998 ms
+Ramp Filter time: 13.987 ms
+CT Reconstruction time: 2053.81 ms
+Save reconstruction time: 13.01 ms
+Angles = 120
+CT Processor time: 0 ms
+Input Image read time: 2.002 ms
+Sinogram creation time: 221.149 ms
+Save Sinogram time: 2.005 ms
+Ramp Filter time: 22.432 ms
+CT Reconstruction time: 2971.52 ms
+Save reconstruction time: 10.934 ms
+Angles = 160
+CT Processor time: 0 ms
+Input Image read time: 1.999 ms
+Sinogram creation time: 273.884 ms
+Save Sinogram time: 2.004 ms
+Ramp Filter time: 27.127 ms
+CT Reconstruction time: 4127.98 ms
+Save reconstruction time: 12.998 ms
+Angles = 200
+CT Processor time: 0 ms
+Input Image read time: 3.017 ms
+Sinogram creation time: 445.679 ms
+Save Sinogram time: 3 ms
+Ramp Filter time: 40.006 ms
+CT Reconstruction time: 7155.66 ms
+Save reconstruction time: 11.491 ms
+Angles = 240
+CT Processor time: 0 ms
+Input Image read time: 0.988 ms
+Sinogram creation time: 500.37 ms
+Save Sinogram time: 3.019 ms
+Ramp Filter time: 54.373 ms
+CT Reconstruction time: 7431.93 ms
+Save reconstruction time: 12.087 ms
+Angles = 280
+CT Processor time: 0 ms
+Input Image read time: 0.794 ms
+Sinogram creation time: 521.761 ms
+Save Sinogram time: 3.049 ms
+Ramp Filter time: 57.928 ms
+CT Reconstruction time: 8434.41 ms
+Save reconstruction time: 14.01 ms
+Angles = 320
+CT Processor time: 0 ms
+Input Image read time: 1.002 ms
+Sinogram creation time: 570.093 ms
+Save Sinogram time: 4.004 ms
+Ramp Filter time: 73.035 ms
+CT Reconstruction time: 9508.47 ms
+Save reconstruction time: 14.005 ms
+Angles = 360
+CT Processor time: 0 ms
+Input Image read time: 1.001 ms
+Sinogram creation time: 598.683 ms
+Save Sinogram time: 5.013 ms
+Ramp Filter time: 84.398 ms
+CT Reconstruction time: 11248.5 ms
+Save reconstruction time: 13.013 ms
+
+THREADS = 8
+Angles = 40
+CT Processor time: 0 ms
+Input Image read time: 2.215 ms
+Sinogram creation time: 79.245 ms
+Save Sinogram time: 0.999 ms
+Ramp Filter time: 12.002 ms
+CT Reconstruction time: 580.537 ms
+Save reconstruction time: 9.067 ms
+Angles = 80
+CT Processor time: 0 ms
+Input Image read time: 1.003 ms
+Sinogram creation time: 121.351 ms
+Save Sinogram time: 1.033 ms
+Ramp Filter time: 14.037 ms
+CT Reconstruction time: 1148.2 ms
+Save reconstruction time: 12.021 ms
+Angles = 120
+CT Processor time: 0 ms
+Input Image read time: 2.011 ms
+Sinogram creation time: 179.106 ms
+Save Sinogram time: 3.501 ms
+Ramp Filter time: 21.814 ms
+CT Reconstruction time: 1752.44 ms
+Save reconstruction time: 12.102 ms
+Angles = 160
+CT Processor time: 0 ms
+Input Image read time: 2.954 ms
+Sinogram creation time: 213.204 ms
+Save Sinogram time: 3.002 ms
+Ramp Filter time: 23.665 ms
+CT Reconstruction time: 3373.8 ms
+Save reconstruction time: 11.771 ms
+Angles = 200
+CT Processor time: 0 ms
+Input Image read time: 1.053 ms
+Sinogram creation time: 400.194 ms
+Save Sinogram time: 5.307 ms
+Ramp Filter time: 56.679 ms
+CT Reconstruction time: 4652.16 ms
+Save reconstruction time: 11.518 ms
+Angles = 240
+CT Processor time: 0 ms
+Input Image read time: 1.005 ms
+Sinogram creation time: 412.022 ms
+Save Sinogram time: 5.2 ms
+Ramp Filter time: 58.127 ms
+CT Reconstruction time: 5489.79 ms
+Save reconstruction time: 11.973 ms
+Angles = 280
+CT Processor time: 0 ms
+Input Image read time: 1.997 ms
+Sinogram creation time: 472.287 ms
+Save Sinogram time: 4.017 ms
+Ramp Filter time: 54.984 ms
+CT Reconstruction time: 5471.78 ms
+Save reconstruction time: 12.002 ms
+Angles = 320
+CT Processor time: 0 ms
+Input Image read time: 0.982 ms
+Sinogram creation time: 523.955 ms
+Save Sinogram time: 4.088 ms
+Ramp Filter time: 50.006 ms
+CT Reconstruction time: 5908.75 ms
+Save reconstruction time: 12.724 ms
+Angles = 360
+CT Processor time: 0 ms
+Input Image read time: 1.002 ms
+Sinogram creation time: 493.856 ms
+Save Sinogram time: 6.009 ms
+Ramp Filter time: 58.717 ms
+CT Reconstruction time: 6677.06 ms
+Save reconstruction time: 11.987 ms
+
+THREADS = 20
+Angles = 40
+CT Processor time: 0 ms
+Input Image read time: 1.009 ms
+Sinogram creation time: 62.435 ms
+Save Sinogram time: 0.972 ms
+Ramp Filter time: 12.04 ms
+CT Reconstruction time: 489.263 ms
+Save reconstruction time: 12.999 ms
+Angles = 80
+CT Processor time: 0 ms
+Input Image read time: 1.027 ms
+Sinogram creation time: 118.649 ms
+Save Sinogram time: 2.004 ms
+Ramp Filter time: 14.112 ms
+CT Reconstruction time: 928.609 ms
+Save reconstruction time: 8.707 ms
+Angles = 120
+CT Processor time: 0 ms
+Input Image read time: 1.027 ms
+Sinogram creation time: 160.375 ms
+Save Sinogram time: 2.023 ms
+Ramp Filter time: 15.984 ms
+CT Reconstruction time: 1510.86 ms
+Save reconstruction time: 10 ms
+Angles = 160
+CT Processor time: 0 ms
+Input Image read time: 2.04 ms
+Sinogram creation time: 218.972 ms
+Save Sinogram time: 2.002 ms
+Ramp Filter time: 23.372 ms
+CT Reconstruction time: 1999.28 ms
+Save reconstruction time: 10.018 ms
+Angles = 200
+CT Processor time: 0 ms
+Input Image read time: 1.056 ms
+Sinogram creation time: 261.219 ms
+Save Sinogram time: 2.079 ms
+Ramp Filter time: 33.746 ms
+CT Reconstruction time: 2490.89 ms
+Save reconstruction time: 14.798 ms
+Angles = 240
+CT Processor time: 0 ms
+Input Image read time: 1.989 ms
+Sinogram creation time: 301.62 ms
+Save Sinogram time: 2.004 ms
+Ramp Filter time: 31.767 ms
+CT Reconstruction time: 3923.12 ms
+Save reconstruction time: 12.989 ms
+Angles = 280
+CT Processor time: 0 ms
+Input Image read time: 1.006 ms
+Sinogram creation time: 521.806 ms
+Save Sinogram time: 3.026 ms
+Ramp Filter time: 49.804 ms
+CT Reconstruction time: 4589.71 ms
+Save reconstruction time: 12.015 ms
+Angles = 320
+CT Processor time: 0 ms
+Input Image read time: 2.012 ms
+Sinogram creation time: 575.988 ms
+Save Sinogram time: 4.025 ms
+Ramp Filter time: 51.331 ms
+CT Reconstruction time: 5495.79 ms
+Save reconstruction time: 12.798 ms
+Angles = 360
+CT Processor time: 0 ms
+Input Image read time: 1.976 ms
+Sinogram creation time: 593.7 ms
+Save Sinogram time: 4.052 ms
+Ramp Filter time: 56.424 ms
+CT Reconstruction time: 6194.98 ms
+Save reconstruction time: 13.047 ms
+
+
+
+
+
+**************** CUDA *********************
+Running with common parameters...
+CT Processor time: 0.000226 ms
+Input Image read time: 13.4051 ms
+Sinogram creation time: 982.174 ms
+Save Sinogram time: 4.24473 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 50.0718 ms
+Save reconstruction time: 4.01579 ms
+Running for different block sizes...
+CT Processor time: 9.1e-05 ms
+Input Image read time: 1.63837 ms
+Sinogram creation time: 385.068 ms
+Save Sinogram time: 5.0186 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 49.8907 ms
+Save reconstruction time: 3.47321 ms
+CT Processor time: 0.000102 ms
+Input Image read time: 1.60126 ms
+Sinogram creation time: 387.745 ms
+Save Sinogram time: 5.0957 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 50.6206 ms
+Save reconstruction time: 3.56474 ms
+CT Processor time: 0.000125 ms
+Input Image read time: 1.6375 ms
+Sinogram creation time: 389.956 ms
+Save Sinogram time: 3.77258 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 48.8176 ms
+Save reconstruction time: 3.46801 ms
+CT Processor time: 9.5e-05 ms
+Input Image read time: 1.69104 ms
+Sinogram creation time: 428.437 ms
+Save Sinogram time: 3.95863 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 49.2035 ms
+Save reconstruction time: 3.50852 ms
+CT Processor time: 9.2e-05 ms
+Input Image read time: 1.69494 ms
+Sinogram creation time: 647.448 ms
+Save Sinogram time: 4.27943 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 49.1718 ms
+Save reconstruction time: 3.68071 ms
+CT Processor time: 0.000107 ms
+Input Image read time: 1.64491 ms
+Sinogram creation time: 950.17 ms
+Save Sinogram time: 5.16251 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 48.7753 ms
+Save reconstruction time: 4.42002 ms
+CT Processor time: 9.1e-05 ms
+Input Image read time: 1.64808 ms
+Sinogram creation time: 950.003 ms
+Save Sinogram time: 4.02202 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 50.5487 ms
+Save reconstruction time: 4.18187 ms
+CT Processor time: 9.3e-05 ms
+Input Image read time: 1.63124 ms
+Sinogram creation time: 950.587 ms
+Save Sinogram time: 4.08241 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 48.7017 ms
+Save reconstruction time: 3.29245 ms
+Running for different threads per dimension...
+CT Processor time: 0.00011 ms
+Input Image read time: 1.67548 ms
+Sinogram creation time: 949.944 ms
+Save Sinogram time: 4.40334 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 79.0433 ms
+Save reconstruction time: 3.57076 ms
+CT Processor time: 9.6e-05 ms
+Input Image read time: 1.64091 ms
+Sinogram creation time: 949.929 ms
+Save Sinogram time: 4.57366 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 55.1683 ms
+Save reconstruction time: 3.87093 ms
+CT Processor time: 0.000105 ms
+Input Image read time: 1.97323 ms
+Sinogram creation time: 949.827 ms
+Save Sinogram time: 4.64479 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 51.3477 ms
+Save reconstruction time: 3.54632 ms
+CT Processor time: 8.1e-05 ms
+Input Image read time: 1.64255 ms
+Sinogram creation time: 950.299 ms
+Save Sinogram time: 3.85747 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 50.864 ms
+Save reconstruction time: 3.47968 ms
+CT Processor time: 8.9e-05 ms
+Input Image read time: 1.63696 ms
+Sinogram creation time: 950.358 ms
+Save Sinogram time: 4.09502 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 51.0366 ms
+Save reconstruction time: 3.20568 ms
+CT Processor time: 0.000121 ms
+Input Image read time: 1.64437 ms
+Sinogram creation time: 950.494 ms
+Save Sinogram time: 4.03433 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 51.5232 ms
+Save reconstruction time: 3.69328 ms
+Running for different transducer and angle values...
+CT Processor time: 0.000123 ms
+Input Image read time: 1.84807 ms
+Sinogram creation time: 257.315 ms
+Save Sinogram time: 76.5641 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 49.9259 ms
+Save reconstruction time: 3.90245 ms
+CT Processor time: 9.2e-05 ms
+Input Image read time: 1.6787 ms
+Sinogram creation time: 511.974 ms
+Save Sinogram time: 3.74849 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 50.6867 ms
+Save reconstruction time: 3.28037 ms
+CT Processor time: 0.000102 ms
+Input Image read time: 1.67524 ms
+Sinogram creation time: 1021.92 ms
+Save Sinogram time: 4.80373 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 50.1538 ms
+Save reconstruction time: 3.52097 ms
+CT Processor time: 9e-05 ms
+Input Image read time: 1.59746 ms
+Sinogram creation time: 475.876 ms
+Save Sinogram time: 5.41506 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 48.8249 ms
+Save reconstruction time: 3.90702 ms
+CT Processor time: 9.2e-05 ms
+Input Image read time: 1.63756 ms
+Sinogram creation time: 949.936 ms
+Save Sinogram time: 4.12868 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 48.9783 ms
+Save reconstruction time: 3.23453 ms
+CT Processor time: 6.8e-05 ms
+Input Image read time: 1.63804 ms
+Sinogram creation time: 1899.31 ms
+Save Sinogram time: 6.17826 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 50.2876 ms
+Save reconstruction time: 3.53723 ms
+CT Processor time: 9.7e-05 ms
+Input Image read time: 1.63562 ms
+Sinogram creation time: 632.17 ms
+Save Sinogram time: 3.96311 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 51.3095 ms
+Save reconstruction time: 3.58922 ms
+CT Processor time: 9.4e-05 ms
+Input Image read time: 1.63669 ms
+Sinogram creation time: 1263.18 ms
+Save Sinogram time: 6.1426 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 49.0236 ms
+Save reconstruction time: 3.86102 ms
+CT Processor time: 9.7e-05 ms
+Input Image read time: 1.64311 ms
+Sinogram creation time: 2522.93 ms
+Save Sinogram time: 9.75175 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 49.5806 ms
+Save reconstruction time: 3.58606 ms
+All executions completed.
+45

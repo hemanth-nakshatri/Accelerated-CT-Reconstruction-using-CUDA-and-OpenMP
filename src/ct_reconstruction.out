@@ -1,0 +1,9 @@
+compiling...
+compile completed?
+CT Processor time: 0.00022 ms
+Input Image read time: 49.5998 ms
+Sinogram creation time: 3697.04 ms
+Save Sinogram time: 9.16148 ms
+Ramp Filter time: 0 ms
+CT Reconstruction time: 51.3388 ms
+Save reconstruction time: 1.81043 ms
